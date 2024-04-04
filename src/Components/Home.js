@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import {Router, Link } from "react-router-dom";
-import { dataSlideOne } from '../Data/dataSlideOne';
-import { dataSlideTwo } from '../Data/dataSlideTwo';
-import { dataSlideThree } from '../Data/dataSlideThree';
+import { Link } from "react-router-dom";
+import { dataSlideBookOne } from '../Data/dataSlideBookOne';
+import { dataSlideBookTwo } from '../Data/dataSlideBookTwo';
+import { dataSlideBookThree } from '../Data/dataSlideBookThree';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import './Componets.css';
 import videoBg from '../Assets/videoBg.mp4';
@@ -14,18 +14,18 @@ const Home = () =>{
    
  
     const [slideOne, setSlideOne] = useState(0);
-    const { image } = dataSlideOne[slideOne];
+    const { image } = dataSlideBookOne[slideOne];
 
     const [slideTwo, setSlideTwo] = useState(0);
-    const { img } = dataSlideTwo[slideTwo];
+    const { img } = dataSlideBookTwo[slideTwo];
 
     const [slideThree, setSlideThree] = useState(0);
-    const { pic } = dataSlideThree[slideThree]
+    const { pic } = dataSlideBookThree[slideThree]
  
     const nextSlideOne = () => {
         setSlideOne((slideOne =>{
             slideOne ++;
-            if (slideOne > dataSlideOne.length -1){
+            if (slideOne > dataSlideBookOne.length -1){
                 slideOne=0
             }
             return slideOne;
@@ -35,7 +35,7 @@ const Home = () =>{
         setSlideOne((slideOne =>{
             slideOne --;
             if (slideOne <0){
-                return dataSlideOne.length-1
+                return dataSlideBookOne.length-1
             }
             return slideOne;
         }))
@@ -44,7 +44,7 @@ const Home = () =>{
     const nextSlideTwo = () => {
         setSlideTwo((slideTwo =>{
             slideTwo ++;
-            if (slideTwo > dataSlideTwo.length -1){
+            if (slideTwo > dataSlideBookTwo.length -1){
                 slideTwo=0
             }
             return slideTwo;
@@ -54,7 +54,7 @@ const Home = () =>{
         setSlideTwo((slideTwo =>{
             slideTwo --;
             if (slideTwo <0){
-                return dataSlideTwo.length-1
+                return dataSlideBookTwo.length-1
             }
             return slideTwo;
         }))
@@ -62,7 +62,7 @@ const Home = () =>{
     const nextSlideThree = () =>{
         setSlideThree((slideThree =>{
             slideThree ++;
-            if (slideThree > dataSlideThree.length-1){
+            if (slideThree > dataSlideBookThree.length-1){
                 slideThree=0
             }
             return slideThree
@@ -72,7 +72,7 @@ const Home = () =>{
         setSlideThree((slideThree =>{
             slideThree --;
             if (slideThree <0){
-           return dataSlideThree.length-1
+           return dataSlideBookThree.length-1
          }
          return slideThree
         }))

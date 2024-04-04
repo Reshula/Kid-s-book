@@ -1,4 +1,4 @@
-export const dataSlideThree = [
+export const dataSlideBookThree = [
         
     {
         id:1,

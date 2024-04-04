@@ -1,4 +1,4 @@
-export const dataSlideOne=[
+export const dataSlideBookOne=[
     {
         id:1,
         image:'book-friendship',
