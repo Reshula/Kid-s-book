@@ -3,9 +3,6 @@ import Book from './Book';
 const Books =() =>{
 
 
-
-
-
     return(
         <div className='book-container'>
             {dataBooks.map(book => <Book key={book.id} book={book}/>)}

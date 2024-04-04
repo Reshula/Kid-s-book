@@ -1,20 +1,88 @@
-import React from "react";
+import React, { useState } from "react";
+import {Router, Link } from "react-router-dom";
+import { dataSlideOne } from '../Data/dataSlideOne';
+import { dataSlideTwo } from '../Data/dataSlideTwo';
+import { dataSlideThree } from '../Data/dataSlideThree';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import './Componets.css';
 import videoBg from '../Assets/videoBg.mp4';
-import logo from '../Assets/kb-logo.svg';
 import imageBg from '../Assets/backgraundBook.jpg';
 
 
 const Home = () =>{
+ 
+   
+ 
+    const [slideOne, setSlideOne] = useState(0);
+    const { image } = dataSlideOne[slideOne];
+
+    const [slideTwo, setSlideTwo] = useState(0);
+    const { img } = dataSlideTwo[slideTwo];
+
+    const [slideThree, setSlideThree] = useState(0);
+    const { pic } = dataSlideThree[slideThree]
+ 
+    const nextSlideOne = () => {
+        setSlideOne((slideOne =>{
+            slideOne ++;
+            if (slideOne > dataSlideOne.length -1){
+                slideOne=0
+            }
+            return slideOne;
+        }))
+      };
+    const prevSlideOne = () =>{
+        setSlideOne((slideOne =>{
+            slideOne --;
+            if (slideOne <0){
+                return dataSlideOne.length-1
+            }
+            return slideOne;
+        }))
+    }  
+    
+    const nextSlideTwo = () => {
+        setSlideTwo((slideTwo =>{
+            slideTwo ++;
+            if (slideTwo > dataSlideTwo.length -1){
+                slideTwo=0
+            }
+            return slideTwo;
+        }))
+      };
+    const prevSlideTwo = () =>{
+        setSlideTwo((slideTwo =>{
+            slideTwo --;
+            if (slideTwo <0){
+                return dataSlideTwo.length-1
+            }
+            return slideTwo;
+        }))
+    }  
+    const nextSlideThree = () =>{
+        setSlideThree((slideThree =>{
+            slideThree ++;
+            if (slideThree > dataSlideThree.length-1){
+                slideThree=0
+            }
+            return slideThree
+        }))
+    };
+    const prevSlideThree = () =>{ 
+        setSlideThree((slideThree =>{
+            slideThree --;
+            if (slideThree <0){
+           return dataSlideThree.length-1
+         }
+         return slideThree
+        }))
+       
+    }
     return(
-        <div className="main">
+        <div >
             <div className="container">
-               <img className="logo" src={logo} alt="logo"/>
-               <h2>Big adventures. Small prices.</h2>
                <video src={videoBg} autoPlay loop muted/>
             </div>   
-
-           
         <div className="container-block">
            
             <div className="block">
@@ -38,9 +106,7 @@ const Home = () =>{
                 
                 <div className="block-button">
                     <nav>
-               
-                    <button className="button">Shop now</button>
-                 
+                    <Link to="/store" className="button">Shop now</Link>  
                     </nav>
                 </div>
                 
@@ -52,8 +118,28 @@ const Home = () =>{
            
         </div>
          
-            
+         {/* SLIDES */}
+
+         <div className='slide-container'>
+        <div className='slide-two'>
+            <img className='slide-img' src={`./${img}.jpg`} alt='book'/> 
+<BsChevronCompactLeft onClick={prevSlideTwo} className='left-btn-two container'/>
+<BsChevronCompactRight onClick={nextSlideTwo} className='right-btn-two container'/>
         </div>
-    )
+        <div className='slide-one'>
+            <img className='slide-img' src={`./${image}.jpg`} alt='book'/>  
+<BsChevronCompactLeft onClick={prevSlideOne} className='left-btn-one container'/>
+<BsChevronCompactRight onClick={nextSlideOne} className='right-btn-one container'/>           
+        </div>
+        <div className='slide-three'>
+            <img className='slide-img' src={`./${pic}.jpg`} alt='book'/> 
+<BsChevronCompactLeft onClick={prevSlideThree} className='left-btn-three container'/>
+<BsChevronCompactRight onClick={nextSlideThree} className='right-btn-three container'/>
+        </div>
+        </div>
+        
+    </div>
+    );
 }
+
 export default Home;
