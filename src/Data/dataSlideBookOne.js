@@ -1,20 +1,19 @@
 export const dataSlideBookOne=[
     {
         id:1,
-        image:'book-friendship',
-       
+        img:'book-kindness',
     },
     {
         id:2,
-        image:'book-friendship1'
+        img:'book-kindness1',
     },
     {
         id:3,
-        image:'book-friendship2'
+        img:'book-kindness2',
     },
     {
         id:4,
-        image:'book-friendship3'
+        img:'book-kindness3',
     },
 
    

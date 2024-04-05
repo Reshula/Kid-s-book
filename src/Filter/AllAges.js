@@ -7,7 +7,7 @@ const AllAges = () =>{
     return(
         <div className="age-block" >
 
-        {['Age up 2', 'Age 3-5','Age 6-8','Age 9-12','ALL AGES'].map(category =>    <Filter  category={category}/>)}
+        {['AGE up 2', 'AGE 3-5','AGE 6-8','AGE 9-12','ALL AGES'].map(category =>    <Filter  category={category}/>)}
  
         </div>
     )

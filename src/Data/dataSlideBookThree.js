@@ -2,14 +2,14 @@ export const dataSlideBookThree = [
         
     {
         id:1,
-        pic:'book-black',
+        img:'book-black',
     },
     {
         id:2,
-        pic:'book-black1',
+        img:'book-black1',
     },
     {
         id:3,
-        pic:'book-black2',
+        img:'book-black2',
     },
 ]

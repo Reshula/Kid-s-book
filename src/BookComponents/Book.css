@@ -23,21 +23,31 @@
     flex-wrap: wrap;
     margin-top: 10px;
 }
-.categoryButtonSelected:hover{
-    background-color:#ee8699 ;
+.categoryButtonSelected{
+    background-color:#6bc9c8;
     text-align: center;
     padding: 10px;
     margin: 10px;
     border-radius: 25px;
     width: 150px;
+    color:#ffffff;
+
 }
-.categoryButtonSelected:hover{
-    background-color: #6bc9c8;
+.categoryButton:hover {
+    background-color: #fef4b3;
     text-align: center;
     padding: 10px;
     margin: 10px;
     border-radius: 25px;
     width: 150px;
+}.categoryButton{
+    background-color:#ee8699  ;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 150px;
+    color:#ffffff;
 }
 .slide-container{
     display: flex;

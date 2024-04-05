@@ -1,3 +1,4 @@
+import ChangeQuantity from "../Cart/ChangeQuantity";
 
 const Book = ({book}) =>{
  
@@ -7,7 +8,7 @@ const Book = ({book}) =>{
                  <div className="book-info">
                    <p>{book.name}</p>
                    <p> {book.price}</p>
-                   <button>How many books?</button>
+                   <ChangeQuantity/>
                    <button className="add-to-cart"> Add to cart</button>
                  </div>
        

@@ -1,15 +1,18 @@
-import { useSelector } from "react-redux";
-import { getSelectedCategory } from '../redux/booksSlice';
+import { useDispatch, useSelector } from "react-redux";
+import { filterCategory, getSelectedCategory } from '../redux/booksSlice';
+
 
 
 const Filter = ({ category}) =>{
+    const dispatch = useDispatch()
     
     
-    const selectedCategory = useSelector(selectedCategory)
+    const selectedCategory = useSelector(getSelectedCategory)
     return(
 
         <div >
-           <p className={selectedCategory === category ? 'categoryButtonSelected' : 'categoryButton'}>{category}</p>
+           <p onClick={() => {dispatch(filterCategory(category))}}
+            className={selectedCategory === category ? 'categoryButtonSelected' : 'categoryButton'}>{category}</p>
         </div>
     )
 }

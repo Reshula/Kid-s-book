@@ -1,18 +1,20 @@
 export const dataSlideBookTwo = [
+   
     {
         id:1,
-        img:'book-kindness',
+        img:'book-friendship',
+       
     },
     {
         id:2,
-        img:'book-kindness1',
+        img:'book-friendship1'
     },
     {
         id:3,
-        img:'book-kindness2',
+        img:'book-friendship2'
     },
     {
         id:4,
-        img:'book-kindness3',
+        img:'book-friendship3'
     },
 ]
