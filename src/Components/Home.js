@@ -4,6 +4,9 @@ import './Componets.css';
 import videoBg from '../Assets/videoBg.mp4';
 import imageBg from '../Assets/backgraundBook.jpg';
 import Slider from './Slider';
+import { dataSlideBookOne } from '../Data/dataSlideBookOne';
+import { dataSlideBookTwo } from '../Data/dataSlideBookTwo';
+import { dataSlideBookThree } from '../Data/dataSlideBookThree';
 
 
 const Home = () =>{
@@ -41,13 +44,15 @@ const Home = () =>{
                 
             </div>
             <picture>
-          
             <img className="imageBg" src={imageBg} alt='book'/>
             </picture>
-           
         </div>
+        <div>
+         <Slider data={dataSlideBookOne} />
+         <Slider data={dataSlideBookTwo} />
+         <Slider data={dataSlideBookThree} />
+     </div>
  
-        <Slider/>
     </div>
     );
 }

@@ -10,6 +10,7 @@ import Shop from './BookComponents/Shop';
 import About from './Components/About'
 import Cart from './Cart/Cart'
 import NavBar from './NavBar/NavBar';
+import AboutProduct from './Components/AboutProduct';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/shop" element={<Shop/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/cart" element={<Cart/>} />
+      <Route path="/about/:title" element={<AboutProduct/>} />
       </Routes>  
    
  
