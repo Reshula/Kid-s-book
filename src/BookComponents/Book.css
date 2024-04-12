@@ -49,15 +49,7 @@
     width: 150px;
     color:#ffffff;
 }
-.slide-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-    margin-left: 10px;
-    margin-top: 25px;
- 
-}
+
 .slide-img{
     width: 350px;
     border-radius: 25px;

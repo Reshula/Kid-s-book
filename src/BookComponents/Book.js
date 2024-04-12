@@ -5,7 +5,7 @@ const Book = ({book}) =>{
  
     return(
     <div>
-              <Link to={`/about/${book.title}`}>
+              <Link to={`/store/${book.title}`}>
                 <img className="book-img" src={`./${book.image}.jpg`} alt='book'/> 
               </Link>           
                  <div className="book-info">

@@ -38,7 +38,7 @@ const Home = () =>{
                 
                 <div className="block-button">
                     <nav>
-                    <Link to="/store" className="button">Shop now</Link>  
+                    <Link to="/shop" className="button">Shop now</Link>  
                     </nav>
                 </div>
                 
@@ -47,7 +47,7 @@ const Home = () =>{
             <img className="imageBg" src={imageBg} alt='book'/>
             </picture>
         </div>
-        <div>
+        <div >
          <Slider data={dataSlideBookOne} />
          <Slider data={dataSlideBookTwo} />
          <Slider data={dataSlideBookThree} />

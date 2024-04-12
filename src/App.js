@@ -18,12 +18,11 @@ function App() {
   return (<Router>
     <NavBar/>
     <Routes>
-
       <Route path="/" exact element={<Home/>} />
       <Route path="/shop" element={<Shop/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/cart" element={<Cart/>} />
-      <Route path="/about/:title" element={<AboutProduct/>} />
+      <Route path="/store/:title" element={<AboutProduct/>} />
       </Routes>  
    
  

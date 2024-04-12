@@ -1,6 +1,6 @@
 import { dataBooks } from "../Data/dataBooks";
 import { useParams, useNavigate } from "react-router-dom";
-const AboutProduct = (book) =>{
+const AboutProduct = () =>{
     const navigate = useNavigate();
     const { title } = useParams()
 
@@ -9,10 +9,12 @@ const AboutProduct = (book) =>{
             {dataBooks.filter((book) => book.title === title).map((elem, index) =>{
                 return(
                     <div key={index}>
-                        <p>{elem.name}</p>
-                        <img 
-                        src={elem.img}
+                         <img 
+                        src={`../${elem.img}.jpg`} 
                         alt='book'/>
+                        <p>{elem.name}</p>
+                       <p>{elem.category}</p>
+                       <p>{elem.price}</p>
                         <button onClick={() => navigate(-1)}> GO BACK</button>
                     </div>
                 );
