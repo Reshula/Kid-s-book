@@ -10,7 +10,7 @@ const AboutProduct = () =>{
                 return(
                     <div key={index}>
                          <img 
-                        src={`${elem.img}.jpg`} 
+                        src={elem.image}
                         alt='book'/>
                         <p>{elem.name}</p>
                        <p>{elem.category}</p>
