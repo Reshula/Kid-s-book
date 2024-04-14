@@ -1,8 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { filterCategory, getSelectedCategory } from '../redux/booksSlice';
 
-
-
 const Filter = ({ category}) =>{
     const dispatch = useDispatch()
     

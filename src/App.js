@@ -1,4 +1,3 @@
-
 import './App.css';
 import React from 'react';
 import { BrowserRouter as 
@@ -12,8 +11,6 @@ import Cart from './Cart/Cart'
 import NavBar from './NavBar/NavBar';
 import AboutProduct from './Components/AboutProduct';
 
-
-
 function App() {
   return (<Router>
     <NavBar/>
@@ -24,9 +21,6 @@ function App() {
       <Route path="/cart" element={<Cart/>} />
       <Route path="/store/:title" element={<AboutProduct/>} />
       </Routes>  
-   
- 
-  
 </Router>
   );
 }

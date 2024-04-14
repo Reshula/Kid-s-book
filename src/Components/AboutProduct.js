@@ -10,12 +10,12 @@ const AboutProduct = () =>{
                 return(
                     <div key={index}>
                          <img 
-                        src={`../${elem.img}.jpg`} 
+                        src={`${elem.img}.jpg`} 
                         alt='book'/>
                         <p>{elem.name}</p>
                        <p>{elem.category}</p>
                        <p>{elem.price}</p>
-                        <button onClick={() => navigate(-1)}> GO BACK</button>
+                       <button onClick={() => navigate(-1)}> GO BACK</button>
                     </div>
                 );
             })}
