@@ -17,7 +17,7 @@ const Slider = ({ data }) => {
     };
 
     return (
-        <div className='slide-container'>
+        <div >
         <div >
             <img className='slide-img' src={`../${img}.jpg`} alt='book'/>
             <BsChevronCompactLeft onClick={prevSlide} className='left-btn container'/>

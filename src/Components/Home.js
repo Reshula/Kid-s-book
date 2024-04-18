@@ -47,7 +47,7 @@ const Home = () =>{
             <img className="imageBg" src={imageBg} alt='book'/>
             </picture>
         </div>
-        <div >
+        <div className='slide-container'>
          <Slider data={dataSlideBookOne} />
          <Slider data={dataSlideBookTwo} />
          <Slider data={dataSlideBookThree} />
