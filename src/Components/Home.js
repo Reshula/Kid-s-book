@@ -48,8 +48,8 @@ const Home = () =>{
             </picture>
         </div>
         <div className='slide-container'>
-         <Slider data={dataSlideBookOne} />
-         <Slider data={dataSlideBookTwo} />
+         <Slider  data={dataSlideBookOne} />
+         <Slider  data={dataSlideBookTwo} />
          <Slider data={dataSlideBookThree} />
      </div>
  

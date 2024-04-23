@@ -115,6 +115,129 @@ h3{
     margin-top: 25px;
  
 }
+
+
+/* button for Slider */
+
+.slider .left-btn-one { 
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    left:39.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border:1px solid ;
+    border-radius: 25px;
+    }
+    .slider .right-btn .one{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        right:38.8%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border:1px solid ;
+        border-radius: 25px;
+    
+    }
+    .slide-container .left-btn-two{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        left:6%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border:1px solid ;
+        border-radius: 25px;
+    }
+    .slide-container .right-btn-two{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        right:72%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border:1px solid ;
+        border-radius: 25px;
+    }
+    .slide-container .left-btn-three{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        left:72.8%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border:1px solid ;
+        border-radius: 25px;
+    }
+    .slide-container .right-btn-three{
+        position: absolute;
+        cursor: pointer;
+        top:50%;
+        right:5%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border:1px solid ;
+        border-radius: 25px;
+    }
+  
+    .div-main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+     
+    }
+    .div-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        gap: 30px;
+    
+
+    }
+    .div-left{
+        display: flex;
+        flex:1;
+        gap:20px;
+        
+    }
+    .btn-go-back{
+        border: none;
+        color:#6bc9c8;
+        background-color: #ffffff;
+        justify-content: flex-start;
+        width: 40%;
+   
+    }
+    .main-about{
+        margin-left: 50px;
+        font-family: "Poppins", sans-serif;
+
+    }
+    .div-about{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap:wrap ;
+        margin-left: 50px;
+        
+
+    }
+    .par {
+        display: block;
+        justify-content: flex-start;
+        
+
+
+    }
+    .btn-Par{
+        background: none;
+        color: #6bc9c8;
+        border: none;
+    }
+    
+  
+
 @media all and (max-width:800px){
     .container-block{
         width: 100%;
@@ -146,7 +269,19 @@ h3{
     width: 200px;
     margin-right: 60px;
    }
-    
+
+   .slide-container .left-btn{
+    top:85%;
+    left:9%;
+}
+.slide-container .right-btn{
+    top:85%;
+
+}
+.div-main{
+    display: flex;
+    flex-direction: column;
+}
 
 }
     

@@ -17,14 +17,16 @@ const Slider = ({ data }) => {
     };
 
     return (
-        <div >
-        <div >
+       <div>
+        <div className="slider">
             <img className='slide-img' src={`../${img}.jpg`} alt='book'/>
-            <BsChevronCompactLeft onClick={prevSlide} className='left-btn container'/>
-            <BsChevronCompactRight onClick={nextSlide} className='right-btn container'/>
+            <BsChevronCompactLeft onClick={prevSlide} className='left-btn one two three container'/>
+            <BsChevronCompactRight onClick={nextSlide} className='right-btn-one-two-three container'/>
+        </div>
+  
         </div>
      
-        </div>
+      
   
     );
 

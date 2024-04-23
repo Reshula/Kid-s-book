@@ -1,21 +1,45 @@
 import { dataBooks } from "../Data/dataBooks";
 import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ChangeQuantity from "../Cart/ChangeQuantity";
+import { addItemToCart } from "../redux/cartSlice";
+import { useDispatch } from "react-redux";
 const AboutProduct = () =>{
     const navigate = useNavigate();
-    const { title } = useParams()
+    const  id  = useParams().id;
+    const [quantity, setQuantity] = useState(1);
+    const dispatch = useDispatch();
 
     return(
         <div>
-            {dataBooks.filter((book) => book.title === title).map((elem, index) =>{
+            {dataBooks.filter((book) => book.id === id ).map((elem, index) =>{
                 return(
-                    <div key={index}>
-                         <img 
-                        src={`../${image}.jpg`}
+                    <div className="div-main" key={index}>
+                        <div className="div-left">
+                         <img className="img-container"
+                        src={`../${elem.image}.jpg`}
                         alt='book'/>
-                        <p>{elem.name}</p>
-                       <p>{elem.category}</p>
-                       <p>{elem.price}</p>
-                       <button onClick={() => navigate(-1)}> GO BACK</button>
+                        </div>
+                        <div className="div-right">
+                        <h2>{elem.name}</h2>
+                        <hr/>
+                        <p>by <strong>{elem.author}</strong></p>
+                       <p>Price:<strong>{elem.price}</strong></p>
+                       <h4>About</h4>
+                       <p>{elem.describe}</p>
+                       
+                   <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
+
+                   <button onClick={() => {dispatch(addItemToCart({
+                    id: elem.id,
+                    image: elem.image,
+                    price: elem.price,
+                    desc: elem.describe, 
+                    quantity}))}} 
+                    className="add-to-cart"> Add to cart</button>
+
+                       <button onClick={() => navigate(-1)} className="btn-go-back"> GO BACK</button>
+                       </div>
                     </div>
                 );
             })}
