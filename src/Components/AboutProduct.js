@@ -6,13 +6,13 @@ import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
 const AboutProduct = () =>{
     const navigate = useNavigate();
-    const  id  = useParams().id;
+    const  { title }  = useParams();
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
 
     return(
         <div>
-            {dataBooks.filter((book) => book.id === id ).map((elem, index) =>{
+            {dataBooks.filter((book) => book.title === title ).map((elem, index) =>{
                 return(
                     <div className="div-main" key={index}>
                         <div className="div-left">
@@ -32,9 +32,8 @@ const AboutProduct = () =>{
 
                    <button onClick={() => {dispatch(addItemToCart({
                     id: elem.id,
-                    image: elem.image,
+                    img: elem.image,
                     price: elem.price,
-                    desc: elem.describe, 
                     quantity}))}} 
                     className="add-to-cart"> Add to cart</button>
 

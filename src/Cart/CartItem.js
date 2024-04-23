@@ -1,11 +1,15 @@
+import { dataBooks } from "../Data/dataBooks";
 
 const CartItem = ({cartItem}) =>{
     console.log(cartItem)
+    const books = dataBooks.find(item => item.title === cartItem.bookId)
 
     return(
        
         <div>
-         <p>   {cartItem.quantity} book(s)</p>
+            <img  src={`../${books.image}.jpg` }/>
+        <p> {books.name}</p>
+        <p> {cartItem.quantity} book</p>
 
         </div>
     )
