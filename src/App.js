@@ -10,6 +10,10 @@ import About from './Components/About'
 import Cart from './Cart/Cart'
 import NavBar from './NavBar/NavBar';
 import AboutProduct from './Components/AboutProduct';
+import Contact from './Contact/Contact';
+import Subscribe from './Components/Subscribe';
+
+
 
 function App() {
   return (<Router>
@@ -19,8 +23,10 @@ function App() {
       <Route path="/shop" element={<Shop/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/cart" element={<Cart/>} />
+      <Route path="/contact" element={<Contact/>} />
       <Route path="/store/:title" element={<AboutProduct/>} />
       </Routes>  
+  <Subscribe />
 </Router>
   );
 }

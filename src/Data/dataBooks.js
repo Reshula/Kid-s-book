@@ -6,7 +6,7 @@ export const dataBooks = [
         describe:"With kid- and family-tested art projects, conversation starters, games, and writing prompts - plus twelve bonus reflection cards for countless uses limited only by the imagination - licensed therapist Dana Wyss, PhD, teams up with Patrice Karst to give readers of all ages the creative tools to build stronger attachments.",
         title:"book-one",
         author:" Karst, Patrice",
-        price:"CAD$ 3.99",
+        price:"3.99",
         image:"book351",
   
     },
@@ -17,7 +17,7 @@ export const dataBooks = [
         describe:"When Amelia Bedelia's mother is having a Amelia Bedelia knows just what to do to make it brighter. As soon as her mother leaves to go shopping, Amelia Bedelia gets to work on a huge, multicolored sidewalk chalk mural. She enlists her friends and neighbors to help do chalk drawings on her sidewalk, front walk, driveway, fence, and even on the trees and sides of their house. Chalk one up for Amelia Bedelia in this Level 1 I Can Read about teamwork and creativity. Just right for children learning to sound out words and sentences.",
         title:"book-two",
         author:"Parish, Herman",
-        price:"CAD$ 9.99",
+        price:"9.99",
         image:"book-6-8-(1)",
     },
     {
@@ -27,7 +27,7 @@ export const dataBooks = [
         describe:"Discover 22 roar-some sounds in this fun book! Featuring exciting scenes full of amazing dinosaurs and lots of buttons to press, this is the perfect sound book for dino fans.",
         title:"book-three",
         author:" Freedman, Deborah",
-        price:"CAD$ 2.99",
+        price:"2.99",
         image:"bookUpThree",
     },
     {
@@ -37,7 +37,7 @@ export const dataBooks = [
         describe:"This children's books tells the story of Jess Aarons who wants to be the fastest runner in fifth grade. He's been practicing all summer, but a new kid - a - girl - outruns everyone. Jess and Leslie Burke become friends, and together create an imaginary magical kingdom of Terabithia. Then one day tragedy strikes. Winner of the 1978 Newbery Medal.",
         title:"book-four",
         author:"Paterson, Katherine",
-        price:"CAD$ 7.99",
+        price:"7.99",
         image:"book-9-12-(3)",
     },
     {
@@ -47,7 +47,7 @@ export const dataBooks = [
         describe:" As soon as her mother leaves  Chalk one up for Amelia Bedelia in this Level 1 I Can Read about teamwork and creativity. Just right for children learning to sound out words and sentences.",
         title:"book-five",
         author:"Capucilli, Alyssa Satin",
-        price:"CAD$ 3.99",
+        price:"3.99",
         image:"book-3-5-(2)",
     },
     {
@@ -57,7 +57,7 @@ export const dataBooks = [
         describe:"Jasper Rabbit has a problem: he is NOT doing well in school. His spelling tests? Disasters.His math quizzes? Frightening to behold. But one day, he finds a crayon lying in the gutter. Purple. Pointy. Perfect. Somehow…it looked happy to see him. And it wants to help.",
         title:"book-six",
         author:" Reynolds, Aaron",
-        price:"CAD$ 5.99",
+        price:"5.99",
         image:"book-6-8-(2)",
     },
     {
@@ -67,7 +67,7 @@ export const dataBooks = [
         describe:"Open the pages to reveal many different farm animals! With stunning illustrations by Grace Habib, punchy Pantone colors to engage babies’ senses, and soft learning about colors, this is a perfect gift for babies aged 6 months and over.",
         title:"book-seven",
         author:" Boxer Books",
-        price:"CAD$ 2.99",
+        price:"2.99",
         image:"bookUpFour",
     },
     {
@@ -77,7 +77,7 @@ export const dataBooks = [
         describe:"For more than 100 years, people have been captivated by the disastrous sinking of the Titanic that claimed over 1,500 lives. Now young readers can find out why the great ship went down and how it was discovered seventy-five years later.",
         title:"book-eigth",
         author:" Sabol, Stephanie",
-        price:"CAD$ 7.99",
+        price:"7.99",
         image:"book-9-12-(1)",
     },
     {
@@ -87,7 +87,7 @@ export const dataBooks = [
         describe:"In Biscuit's neighborhood, every day is the perfect day for an adventure! Join everyone's favorite puppy, Biscuit, as he goes camping, plays ball, visits the library, and more! With five fun-filled stories in one box, this collection is perfect for beginning readers.",
         title:"book-nine",
         author:"Capucilli, Alyssa Satin",
-        price:"CAD$ 3.99",
+        price:"3.99",
         image:"book-3-5-(3)",
     },
     {
@@ -97,7 +97,7 @@ export const dataBooks = [
         describe:"Rule the ocean in this shark-tastic sticker and activity book from National Geographic Kids! This super engaging activity book is packed with mazes, spelling and pattern games, drawing activities, shark facts, and more. Shark-crazy kids are sure to love these pages loaded with fun, learning as the go!",
         title:"book-ten",
         author:" Mugford, Simon",
-        price:"CAD$ 5.99",
+        price:"5.99",
         image:"book-6-8-(3)",
     },
     {
@@ -107,7 +107,7 @@ export const dataBooks = [
         describe:"Kids will love keeping busy with this grab-and-go PAW Patrol collection filled with stories, activities, friendship, and fun! Themed sections feature adventures, activities, and lots of pups, all across Adventure Bay! Read about Chase, Marshall, Skye, and the rest of the PAW Patrol, and complete Look and Find challenges and What's Different? picture puzzles. No pencil required!",
         title:"book-eleven",
         author:" Fischer, Maggie (Adapted by)",
-        price:"CAD$ 2.99",
+        price:"2.99",
         image:"bookUpFiv",
     },
     {
@@ -117,7 +117,7 @@ export const dataBooks = [
         describe:"From The Lost Hero to the Blood of Olympus, this collection of Rick Riordan's mega-bestselling series will be a go-to gift for readers who have finished the Percy Jackson and the Olympians books.",
         title:"book-twelve",
         author:"Rick Riordan",
-        price:"CAD$ 7.99",
+        price:"7.99",
         image:"book-9-12-(2)",
     },
     {
@@ -127,7 +127,7 @@ export const dataBooks = [
         describe:"Bluey and Bingo love their mum, and she loves them! Discover all of Chilli's special mum skills in this touching and humorous book.",
         title:"book-thirteen",
         author:" Penguin Group",
-        price:"CAD$ 2.99",
+        price:"2.99",
         image:"book-3-5-(5)",
     },
     {
@@ -137,7 +137,7 @@ export const dataBooks = [
         describe:"Forty pages of activities pair with 16 pages of 1,000 incredible animal stickers to bring kids an exciting, interactive experience with the coolest animals on the planet. Kids can use their stickers to add little fish prey for the great white shark's lunch, to show orangutans swinging from trees, and to camouflage cheetahs in the savanna. Each spread merges vibrant artwork with real wild animal photographs and an array of fun and informative activities.",
         title:"book-fourteen",
         author:" National Geographic",
-        price:"CAD$ 4.99",
+        price:"4.99",
         image:"book-6-8-(4)",
     },
     {
@@ -147,7 +147,7 @@ export const dataBooks = [
         describe:"Little Elephant has a big and loving family led by her Mommy and she can't wait to introduce you to her siblings, aunts, and cousins. Little Elephant walks miles every day with her herd, are you excited to join her journey? ",
         title:"book-fifteen",
         author:"Brett, Anna",
-        price:"CAD$ 2.99",
+        price:"2.99",
         image:"bookUpSix",
     },
     {
@@ -157,7 +157,7 @@ export const dataBooks = [
         describe:"Ben Ripley may only be in middle school, but he’s already pegged his dream job: CIA or bust. Unfortunately for him, his personality does not exactly scream secret agent. In fact, Ben is so awkward, he can barely get to school and back without a mishap. Because of his innate nerdiness, Ben is not surprised when he is recruited for a magnet school with a focus on science—but he’s entirely shocked to discover that the school is actually a front for a junior CIA academy. Could the CIA really want him?",
         title:"book-sixteen",
         author:" Gibbs, Stuart",
-        price:"CAD$ 7.99",
+        price:"7.99",
         image:"book-9-12-(4)",
     },
     {
@@ -167,7 +167,7 @@ export const dataBooks = [
         describe:"Meet Blue. A muddy country road is no match for this little pick up - that is, until he gets stuck while pushing a dump truck out of the muck. Luckily, Blue has made a pack of farm animal friends along his route. And they're willing to whatever it takes to get their pal back on the road. Filled with truck sounds and animals noises, here is a rollicking homage to the power of friendship and the rewards of helping others.",
         title:"book-seventeen",
         author:" Schertle, Alice",
-        price:"CAD$ 3.99",
+        price:"3.99",
         image:"book-3-5-(6)",
     },
     {
@@ -177,7 +177,7 @@ export const dataBooks = [
         describe:"Biscuit and his friends are ready to visit the community garden.Level 1 readers feature short sentences, familiar words, and simple concepts for children eager to read on their own.",
         title:"book-eigthteen",
         author:" Capucilli, Alyssa Satin",
-        price:"CAD$ 3.99",
+        price:"3.99",
         image:"book-3-5-(4)",
     },
 ]

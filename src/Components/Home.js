@@ -4,6 +4,7 @@ import './Componets.css';
 import videoBg from '../Assets/videoBg.mp4';
 import imageBg from '../Assets/backgraundBook.jpg';
 import Slider from './Slider';
+// import Footer from "./Footer";
 import { dataSlideBookOne } from '../Data/dataSlideBookOne';
 import { dataSlideBookTwo } from '../Data/dataSlideBookTwo';
 import { dataSlideBookThree } from '../Data/dataSlideBookThree';
@@ -52,6 +53,7 @@ const Home = () =>{
          <Slider  data={dataSlideBookTwo} />
          <Slider data={dataSlideBookThree} />
      </div>
+     {/* <Footer/> */}
  
     </div>
     );

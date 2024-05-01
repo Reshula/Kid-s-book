@@ -1,6 +1,5 @@
 .container-logo{
-    display: flex;
-    
+    display: flex;   
 }
 .container-main{
     display: flex;
@@ -14,5 +13,8 @@ h2{
     h2{
         font-size: 18px;
         margin-top: 30px;
+    }
+    .logo{
+        width:50px ;
     }
 }

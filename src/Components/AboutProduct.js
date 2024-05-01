@@ -24,7 +24,7 @@ const AboutProduct = () =>{
                         <h2>{elem.name}</h2>
                         <hr/>
                         <p>by <strong>{elem.author}</strong></p>
-                       <p>Price:<strong>{elem.price}</strong></p>
+                       <p>Price:<strong>$ {elem.price}</strong></p>
                        <h4>About</h4>
                        <p>{elem.describe}</p>
                        

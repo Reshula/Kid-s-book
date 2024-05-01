@@ -8,6 +8,11 @@
     flex-grow: 1;
     flex-basis: 16%; 
 }
+.shop-title{
+    text-align: center;
+    padding: 10px;
+  
+}
 .book-img{
     width: 200px;
     height: 200px;

@@ -1,15 +1,26 @@
 import { useSelector } from 'react-redux';
-import image from '../Assets/icons-cart.png'
 import CartItem from './CartItem';
-import { getCartItems } from '../redux/cartSlice';
+import { getCartItems , getTotalPrice} from '../redux/cartSlice';
+import ContinueShopping from './ContinueShopping';
 const Cart = () =>{
-    const cartItems = useSelector(getCartItems)
+    const cartItems = useSelector(getCartItems);
+    const totalPrice = useSelector(getTotalPrice)
 
 
     return(
-        <div>
-            <img src={image} alt='icon'/>
-            {cartItems.map(cartItem => <CartItem cartItem={cartItem}/>)}
+        <div className='cart-container'>
+            <div  className='cart-block'>
+            <h3 className='cart-title'>Your Shopping Cart</h3>
+           
+                <h3 className="totalPrice">{totalPrice === 0 ? 'Cart is empty' 
+                    : `Total: $${totalPrice.toFixed(2)}`}</h3>
+                    {cartItems.map((cartItem, index )=> <CartItem key={index} cartItem={cartItem}/>)}    
+            </div>
+            <div className='icon-cart'>
+                {totalPrice === 0 && <ContinueShopping /> }
+            </div>
+
+            
             
 
         </div>

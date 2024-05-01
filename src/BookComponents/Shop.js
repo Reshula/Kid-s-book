@@ -9,7 +9,7 @@ return(
     <div>
        <AllAges/>
         <div>
-            <h2>Online Discount Bookstore Selection</h2>
+            <h2 className='shop-title'>Online Discount Bookstore Selection</h2>
         </div>
         <Books/>
     </div>
