@@ -1,0 +1,20 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#6bc9c8;
+    color: #000000;
+  
+}
+.footer-title:hover{
+    color: #ee8699;
+	transition: 200ms ease-in;
+}
+p:hover{
+    color: #ee8699;
+	transition: 200ms ease-in;
+}
+span:hover{
+    color: #ee8699;
+	transition: 200ms ease-in;
+}

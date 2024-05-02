@@ -1,37 +1,53 @@
 import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import Hamburger from 'hamburger-react';
 import logo from '../Assets/kb-logo.svg';
 import image from '../Assets/icons-cart.png'
 import './NavBar.css'
 
 
 const NavBar =() =>{
+  const [isOpen, setIsOpen] = useState(false);
+  // const handleShowNavbar = () => {
+  //   setIsOpen(!setIsOpen)
+  // } onClick={handleShowNavbar}
+ 
     return(
-        <div>
-            <nav>
-                <div className='container-main'>
-            <div className='container-logo'>
+        <div >
+           
+            <div className='container-main'>
+              <div className='container-logo'>
                <img className="logo" src={logo} alt="logo"/>
                <h2>Big adventures. Small prices.</h2>
-               </div>
+              </div>
+              <div className='conatiner-cart'>
                <NavLink to="/cart">     <img src={image} alt='icon'/></NavLink>
-               </div>
+               <Hamburger color="#6bc9c8" toggled={isOpen} toggle={setIsOpen}/>
+               </div> 
+            </div>
+            <nav    className={`nav-elements ${isOpen ? 'open' : ''}`} >
+            {isOpen && (
             <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink  to="/" className='burger-menu' >Home</NavLink>
             </li>
            
             <li>
-              <NavLink to="/shop">Shop by age</NavLink>
+              <NavLink to="/shop" className='burger-menu'>Shop by age</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" className='burger-menu'>About</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact" className='burger-menu'>Contact</NavLink>
             </li>
           
             </ul>
+            )}
             </nav>
+            
+          
+         
 
         </div>
     )

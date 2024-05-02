@@ -3,6 +3,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import './Componets.css';
 
 
+
 const Slider = ({ data }) => {
     const [slideIndex, setSlideIndex] = useState(0);
     const {img}   = data[slideIndex];

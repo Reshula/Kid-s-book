@@ -192,6 +192,7 @@ h3{
         flex-direction: column;
         justify-content: center;
         flex: 1;
+        margin-left: 10px;
         gap: 30px;
     
 
@@ -201,6 +202,16 @@ h3{
         flex:1;
         gap:20px;
         
+    }
+    .add-to-cart{
+        width: 40%;
+        margin: 10px;
+        padding: 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: #6bc9c8;
+        color: #ee8699;
+        font-size: 20px;
     }
     .btn-go-back{
         border: none;
@@ -251,7 +262,6 @@ h3{
    .input-container{
     width: 50%;
     height: 40px;
-    /* background-color: #fff; */
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgrey;

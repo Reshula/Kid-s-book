@@ -1,3 +1,4 @@
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Componets.css';
 import { useForm } from '@formspree/react';
@@ -8,7 +9,7 @@ const Subscribe = () => {
         return <div className="thank-you">Thank you for subscribing!</div>;
       }
     return (
-        <div className="subscribe-container" data-aos="fade-up" data-aos-duration="2000">
+        <div className="subscribe-container" data-aos="fade-up" data-aos-duration="1500">
             <div className="subscribe-title">
                 <h2 className='title-subscribe'>Subscribe</h2>
             <p className="subscribe-par">Get timely updates from your favorite books.</p>

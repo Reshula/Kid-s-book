@@ -12,6 +12,7 @@ import NavBar from './NavBar/NavBar';
 import AboutProduct from './Components/AboutProduct';
 import Contact from './Contact/Contact';
 import Subscribe from './Components/Subscribe';
+import Footer from './Footer/Footer';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/store/:title" element={<AboutProduct/>} />
       </Routes>  
   <Subscribe />
+  <Footer />
 </Router>
   );
 }

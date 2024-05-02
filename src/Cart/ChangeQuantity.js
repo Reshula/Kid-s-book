@@ -12,10 +12,10 @@ const ChangeQuantity =({quantity, setQuantity}) =>{
     }
 
     return(        
-        <div>
-            <button onClick={addQuantity}> + </button>
+        <div className="add-remove-block">
+            <button onClick={addQuantity} className="add-item"> + </button>
             <span>{quantity}</span>
-            <button onClick={removeQuantity}> - </button>
+            <button onClick={removeQuantity} className="remove-item"> - </button>
         </div>
     )
 }

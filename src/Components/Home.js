@@ -4,7 +4,7 @@ import './Componets.css';
 import videoBg from '../Assets/videoBg.mp4';
 import imageBg from '../Assets/backgraundBook.jpg';
 import Slider from './Slider';
-// import Footer from "./Footer";
+import 'aos/dist/aos.css';
 import { dataSlideBookOne } from '../Data/dataSlideBookOne';
 import { dataSlideBookTwo } from '../Data/dataSlideBookTwo';
 import { dataSlideBookThree } from '../Data/dataSlideBookThree';
@@ -48,10 +48,10 @@ const Home = () =>{
             <img className="imageBg" src={imageBg} alt='book'/>
             </picture>
         </div>
-        <div className='slide-container'>
-         <Slider  data={dataSlideBookOne} />
-         <Slider  data={dataSlideBookTwo} />
-         <Slider data={dataSlideBookThree} />
+        <div className='slide-container'data-aos="zoom-out-up"  >
+         <Slider  data={dataSlideBookOne}   />
+         <Slider  data={dataSlideBookTwo}    />
+         <Slider data={dataSlideBookThree}   />
      </div>
      {/* <Footer/> */}
  
