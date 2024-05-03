@@ -49,17 +49,10 @@
     padding: 10px;
 }
 h3{
-    font-size: 50px;
+    font-size: 40px;
     text-align:center;
 }
-.age-all{
-    background-color: #49CF66;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
-    width: 150px;
-    color:#ffff;
-}
+
 .age-Up2{
     background-color: #ee8699;
     text-align: center;
@@ -95,6 +88,7 @@ h3{
     margin: 10px;
     border-radius: 25px;
     width: 150px;
+
     
 }
 .button{
@@ -102,10 +96,14 @@ h3{
     margin-left: 90px;
     padding: 10px;
     border-radius: 25px;
-    background-color: #49CF66;
+    background-color:#49CF66;
     text-decoration: none;
     color: #000000;
+    border: none;
+  
+    top:4px;
 }
+
 .slide-container{
     display: flex;
     justify-content: space-around;
@@ -115,21 +113,25 @@ h3{
     margin-top: 25px;
  
 }
+.slide:hover{
+    scale: 1.5;
+  
+}
 
 
-/* button for Slider */
-
-.slider .left-btn-one { 
+ /* button for Slider */
+ 
+ .left-btn-one{ 
     position: absolute;
     cursor: pointer;
     top:50%;
-    left:39.5%;
+    left:80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     border:1px solid ;
     border-radius: 25px;
-    }
-    .slider .right-btn .one{
+    } 
+    .right-btn-one{
         position: absolute;
         cursor: pointer;
         top:50%;
@@ -140,7 +142,7 @@ h3{
         border-radius: 25px;
     
     }
-    .slide-container .left-btn-two{
+    .left-btn-two{
         position: absolute;
         cursor: pointer;
         top:50%;
@@ -150,7 +152,7 @@ h3{
         border:1px solid ;
         border-radius: 25px;
     }
-    .slide-container .right-btn-two{
+    .right-btn-two{
         position: absolute;
         cursor: pointer;
         top:50%;
@@ -160,7 +162,7 @@ h3{
         border:1px solid ;
         border-radius: 25px;
     }
-    .slide-container .left-btn-three{
+     .left-btn-three{
         position: absolute;
         cursor: pointer;
         top:50%;
@@ -170,7 +172,7 @@ h3{
         border:1px solid ;
         border-radius: 25px;
     }
-    .slide-container .right-btn-three{
+ .right-btn-three{
         position: absolute;
         cursor: pointer;
         top:50%;
@@ -179,7 +181,7 @@ h3{
         -ms-transform: translate(-50%, -50%);
         border:1px solid ;
         border-radius: 25px;
-    }
+    } */
   
     .div-main{
         display: flex;
@@ -212,6 +214,9 @@ h3{
         background-color: #6bc9c8;
         color: #ee8699;
         font-size: 20px;
+    }
+    .add-to-cart:hover{
+        scale:1.05
     }
     .btn-go-back{
         border: none;
@@ -256,7 +261,6 @@ h3{
     margin: 0;
     letter-spacing: 2px;
     text-align: center;
-    
     color: #6bc9c8;
   }
    .input-container{
@@ -281,6 +285,9 @@ h3{
     font-size: 20px;
     padding: 10px;
  
+  }
+  .sub-btn:hover{
+    scale:1.05
   }
     
   

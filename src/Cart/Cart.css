@@ -39,6 +39,7 @@
   }
   .btn-cart-box:hover{
     background-color: #ee8699;
+    scale: 1.02;
   }
   .add-remove-block{
     margin-left: 100px;
@@ -51,6 +52,10 @@
     border: none;
     color: #ee8699;
     font-size: 30px;
+  }
+  
+  .add-item:hover, .remove-item:hover{
+    scale:1.05
   }
   @media all and (max-width:800px){
     .cart-title{

@@ -4,7 +4,7 @@ import './Componets.css';
 
 
 
-const Slider = ({ data }) => {
+const Slider = ({ data , index}) => {
     const [slideIndex, setSlideIndex] = useState(0);
     const {img}   = data[slideIndex];
    
@@ -21,8 +21,9 @@ const Slider = ({ data }) => {
        <div>
         <div className="slider">
             <img className='slide-img' src={`../${img}.jpg`} alt='book'/>
-            <BsChevronCompactLeft onClick={prevSlide} className='left-btn one two three container'/>
-            <BsChevronCompactRight onClick={nextSlide} className='right-btn-one-two-three container'/>
+            <BsChevronCompactLeft onClick={prevSlide} className='left-btn-one-two-three' />
+            <BsChevronCompactRight onClick={nextSlide} className='right-btn-one-two-three'/>
+     
         </div>
   
         </div>

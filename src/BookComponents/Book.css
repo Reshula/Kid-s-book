@@ -61,7 +61,7 @@
     border-radius: 25px;
     
 }
-.slide-container .left-btn-one { 
+/* .slide-container .left-btn-one { 
 position: absolute;
 cursor: pointer;
 top:50%;
@@ -121,6 +121,12 @@ border-radius: 25px;
     -ms-transform: translate(-50%, -50%);
     border:1px solid ;
     border-radius: 25px;
+} */
+.type{
+    text-align: center;
+    color: #ee8699;
+  
+
 }
 @media all and (max-width:500px){
     .book-img{

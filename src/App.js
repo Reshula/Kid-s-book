@@ -17,9 +17,9 @@ import Footer from './Footer/Footer';
 
 
 function App() {
-  return (<Router>
+  return (<Router >
     <NavBar/>
-    <Routes>
+    <Routes >
       <Route path="/" exact element={<Home/>} />
       <Route path="/shop" element={<Shop/>} />
       <Route path="/about" element={<About/>} />
