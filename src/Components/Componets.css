@@ -181,12 +181,14 @@ h3{
         -ms-transform: translate(-50%, -50%);
         border:1px solid ;
         border-radius: 25px;
-    } */
+    } 
   
     .div-main{
-        display: flex;
+    display: flex;
+ 
         flex-wrap: wrap;
         margin: 20px;
+    
      
     }
     .div-right{
@@ -195,14 +197,15 @@ h3{
         justify-content: center;
         flex: 1;
         margin-left: 10px;
-        gap: 30px;
+        gap: 40px;
     
 
     }
     .div-left{
         display: flex;
         flex:1;
-        gap:20px;
+        margin-left:10px ;
+        gap:30px;
         
     }
     .add-to-cart{
@@ -301,6 +304,9 @@ h3{
         width: 755px;
         height: 450px;
     }
+    .div-right{
+        gap:10px;
+    }
 }
 @media all and (max-width:500px){
     .container-block{
@@ -332,10 +338,7 @@ h3{
     top:85%;
 
 }
-.div-main{
-    display: flex;
-    flex-direction: column;
-}
+
 .input-container{
     width: 75%;
 }
