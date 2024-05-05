@@ -10,10 +10,6 @@
     display: flex;
 }
 
-
-
-
-
 .nav-elements ul {
     display: flex;
     justify-content: center;
@@ -37,6 +33,15 @@
     position: relative;
     text-decoration: underline;
   }
+  .fixed {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all .2s ease-in-out;
+    z-index: 9999;
+}
   
   .nav-elements ul a.active::after {
     content: '';
@@ -51,6 +56,25 @@
 h2{
     margin-top: 10px;
 
+}
+.logo{
+  width: 50px;
+}
+.totalItemsCart {
+  align-items: center;
+  background-color: #ee8699;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  height: 17px;
+  justify-content: center;
+  position: absolute;
+  right: 60px;
+  top: 17px;
+  width: 17px;
 }
 
 @media all and (max-width:500px){

@@ -4,12 +4,13 @@ import { useState } from "react";
 import ChangeQuantity from "../Cart/ChangeQuantity";
 import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
+import Swal from 'sweetalert2'
 const AboutProduct = () =>{
     const navigate = useNavigate();
     const  { title }  = useParams();
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
-
+  
     return(
         <div>
             {dataBooks.filter((book) => book.title === title ).map((elem, index) =>{
@@ -29,13 +30,28 @@ const AboutProduct = () =>{
                        <p>{elem.describe}</p>
                        
                    <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
+                   <button
+     onClick={() => {
+     dispatch(
+      addItemToCart({
+        id: elem.id,
+        img: elem.image,
+        price: elem.price,
+        quantity
+      })
+    );
 
-                   <button onClick={() => {dispatch(addItemToCart({
-                    id: elem.id,
-                    img: elem.image,
-                    price: elem.price,
-                    quantity}))}} 
-                    className="add-to-cart"> Add to cart</button>
+    // Display Swal alert after adding item to cart
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Your item has been added to the cart',
+      showConfirmButton: false,
+      timer: 2000
+    });
+  }}
+  className="add-to-cart"
+> Add to cart</button>
 
                        <button onClick={() => navigate(-1)} className="btn-go-back"> GO BACK</button>
                        </div>
