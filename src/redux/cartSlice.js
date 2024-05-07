@@ -18,36 +18,14 @@ export const slice = createSlice({
                 
             })
         },
-        // removeItemFromCart : (state,action) =>{
-        //     state.cartItems = state.cartItems.filter(
-        //         cartItems => cartItems.id !== action.payload.cartItemId
-        //     )
-        //     Swal.fire({
-        //         title: "Are you sure?",
-        //         text: "You won't be able to revert this!",
-        //         icon: "warning",
-        //         showCancelButton: true,
-        //         confirmButtonColor: "#3085d6",
-        //         cancelButtonColor: "#d33",
-        //         confirmButtonText: "Yes, delete it!"
-        //       }).then((result) => {
-        //         if (result.isConfirmed) {
-        //           Swal.fire({
-        //             title: "Deleted!",
-        //             text: "Your file has been deleted.",
-        //             icon: "success"
-        //           });
-        //         }
-        //         // else {return}
-        //       });
-        // }
+   
+        
+
         removeItemFromCart: (state, action) => {
             const { cartItemId } = action.payload;
           
             // Filter out the item to remove
-            state.cartItems = state.cartItems.filter(
-              cartItem => cartItem.id !== cartItemId
-            );
+         
           
             Swal.fire({
               title: "Are you sure?",
@@ -59,6 +37,10 @@ export const slice = createSlice({
               confirmButtonText: "Yes, delete it!"
             }).then((result) => {
               if (result.isConfirmed) {
+                state.cartItems = state.cartItems.filter(
+                  cartItem => cartItem.id !== cartItemId
+                );
+                // dispatch(removeItemFromCart({ cartItemId }));
                 
                 Swal.fire({
                   title: "Deleted!",
@@ -66,7 +48,7 @@ export const slice = createSlice({
                   icon: "success"
                 });
               }
-            else{return}
+       
             });
           }
     },
