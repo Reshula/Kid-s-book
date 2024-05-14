@@ -158,4 +158,8 @@ border-radius: 25px;
         top:85%;
     
     }
+    .div-main{
+        display: flex;
+        flex-direction: column;
+    }
 }

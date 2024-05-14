@@ -14,7 +14,7 @@ const Cart = () =>{
            
                 <h3 className="totalPrice">{totalPrice === 0 ? 'Cart is empty' 
                     : `Total: $${totalPrice.toFixed(2)}`}</h3>
-                    {cartItems.map((cartItem, index )=> <CartItem key={index} cartItem={cartItem}/>)}    
+                    {cartItems.map((cartItem, id )=> <CartItem key={id} cartItem={cartItem}/>)}    
             </div>
             <div className='icon-cart'>
                 {totalPrice === 0 && <ContinueShopping /> }

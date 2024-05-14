@@ -19,7 +19,7 @@ const AboutProduct = () =>{
                         <div className="div-left">
                          <img className="img-container"
                         src={`../${elem.image}.jpg`}
-                        alt='book'/>
+                        alt='title'/>
                         </div>
                         <div className="div-right">
                         <h2>{elem.name}</h2>

@@ -184,8 +184,7 @@ h3{
     } 
   
     .div-main{
-    display: flex;
- 
+        display: flex;
         flex-wrap: wrap;
         margin: 20px;
     

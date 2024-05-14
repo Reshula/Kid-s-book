@@ -10,7 +10,6 @@ return(
     <div>
        <AllAges/>
         <div className='type'>
-            {/* <h2 className='shop-title'>Online Discount Bookstore Selection</h2> */}
             <TypeAnimation 
             sequence={[
                 'Online Discount Bookstore Selection...',3000

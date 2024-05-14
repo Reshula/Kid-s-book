@@ -8,8 +8,7 @@ const Book = ({book}) =>{
               <Link to={`/store/${book.title}`}>
                 <img className="book-img" src={`./${book.image}.jpg`} alt='book'/> 
               </Link>           
-                 <div className="book-info">
-                 </div>
+              
        
         </div>    
        

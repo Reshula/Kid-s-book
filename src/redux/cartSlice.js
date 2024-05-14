@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import Swal from 'sweetalert2';
 
 export const slice = createSlice({
+ 
     name:'cart',
     initialState :{
         cartItems :[]
@@ -9,20 +11,23 @@ export const slice = createSlice({
     reducers: {
         addItemToCart : (state, action) =>{
             const timeId = new Date().getTime()
+            const { id, quantity, price } = action.payload;
             
             state.cartItems.push({
                 id: timeId,
-                bookId: action.payload.id,
-                quantity: action.payload.quantity,
-                totalPrice: action.payload.quantity * action.payload.price,
+                bookId: id,
+                quantity:quantity,
+                totalItems:quantity ,
+                totalPrice: quantity * price,
                 
             })
         },
    
-        
 
         removeItemFromCart: (state, action) => {
             const { cartItemId } = action.payload;
+          
+      
           
             // Filter out the item to remove
          
@@ -40,7 +45,7 @@ export const slice = createSlice({
                 state.cartItems = state.cartItems.filter(
                   cartItem => cartItem.id !== cartItemId
                 );
-                // dispatch(removeItemFromCart({ cartItemId }));
+              
                 
                 Swal.fire({
                   title: "Deleted!",
@@ -59,7 +64,10 @@ export const getTotalPrice = state =>{
     }, 0)
 }
 export const getTotalArticles = state => {
-    return state.cart.cartItems.length 
+ 
+    return state.cart.cartItems.reduce((total,cartItems) =>{
+      return cartItems.totalItems + total
+  }, 0)
   };
 
 
