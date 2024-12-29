@@ -19,7 +19,7 @@ const CartItem = ({cartItem}) =>{
 
                <p> <strong> {book.name}</strong></p>
                <p> Price: $ {book.price * cartItem.quantity}</p>
-               <p> {cartItem.quantity} item(s)</p>
+               <p> {cartItem.quantity} it(sem)</p>
                <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
                <img src={icon} alt="icon" width="20px"/>
                </span>

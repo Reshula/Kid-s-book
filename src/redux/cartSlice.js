@@ -1,7 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-import Swal from 'sweetalert2';
-
 export const slice = createSlice({
  
     name:'cart',
@@ -11,14 +8,14 @@ export const slice = createSlice({
     reducers: {
         addItemToCart : (state, action) =>{
             const timeId = new Date().getTime()
-            const { id, quantity, price } = action.payload;
+            // const { id, quantity, price } = action.payload;
             
             state.cartItems.push({
                 id: timeId,
-                bookId: id,
-                quantity:quantity,
-                totalItems:quantity ,
-                totalPrice: quantity * price,
+                bookId: action.payload.id,
+                quantity:action.payload.quantity,
+                totalItems:action.payload.quantity ,
+                totalPrice: action.payload.quantity * action.payload.price,
                 
             })
         },
@@ -26,37 +23,12 @@ export const slice = createSlice({
 
         removeItemFromCart: (state, action) => {
             const { cartItemId } = action.payload;
-          
-      
-          
-            // Filter out the item to remove
-         
-          
-            Swal.fire({
-              title: "Are you sure?",
-              text: "You won't be able to revert this!",
-              icon: "warning",
-              showCancelButton: true,
-              confirmButtonColor: "#3085d6",
-              cancelButtonColor: "#d33",
-              confirmButtonText: "Yes, delete it!"
-            }).then((result) => {
-              if (result.isConfirmed) {
-                state.cartItems = state.cartItems.filter(
-                  cartItem => cartItem.id !== cartItemId
-                );
-              
-                
-                Swal.fire({
-                  title: "Deleted!",
-                  text: "Your item has been removed from the cart.",
-                  icon: "success"
-                });
-              }
-       
-            });
+            state.cartItems = state.cartItems.filter(
+              cartItem => cartItem.id !== cartItemId
+            );
           }
     },
+        
 })
 export const getTotalPrice = state =>{
     return state.cart.cartItems.reduce((total,cartItems) =>{
@@ -64,7 +36,6 @@ export const getTotalPrice = state =>{
     }, 0)
 }
 export const getTotalArticles = state => {
- 
     return state.cart.cartItems.reduce((total,cartItems) =>{
       return cartItems.totalItems + total
   }, 0)
